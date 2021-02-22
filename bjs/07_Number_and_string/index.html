@@ -9,16 +9,88 @@
     <link rel="stylesheet" href="style.css" type="text/css"/>
 </head>
 <body>
+    <h3>Предыдущие задачи</h3>
+    <script>
+    let ul = document.createElement('ul');
+    document.body.append(ul);
+   </script>
+
 <div class="container">
     <div class="row calc-row align-items-center">
         <div class="col col-md-4 offset-md-4">
             <div class="form-group">
                 <div class="card" id="calc">
-                    <div class="card-body">
+                    <div class="card-body" >
+                        <input class="form-control input-window" id="inputAll" value="">
                         <input class="form-control input-window" id="inputWindow" value="">
                         <div class="row no-gutters">
                             <div class="col">
                                 <button class="btn btn-outline-danger form-control" id="btn_clr">C</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-danger form-control" id="btn_clrW">CE</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-primary form-control" id="btn_proc">%</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-primary form-control" id="btn_del">/</button>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col">
+                                <button class="btn btn-outline-primary form-control" id="btn_1">1</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-primary form-control" id="btn_2">2</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-primary form-control" id="btn_3">3</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-primary form-control" id="btn_mult">*</button>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col">
+                                <button class="btn btn-outline-primary form-control" id="btn_4">4</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-primary form-control" id="btn_5">5</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-primary form-control" id="btn_6">6</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-primary form-control" id="btn_minus">-</button>
+                            </div>  
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col">
+                                <button class="btn btn-outline-primary form-control" id="btn_7">7</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-primary form-control" id="btn_8">8</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-primary form-control" id="btn_9">9</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-primary form-control" id="btn_plus">+</button>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col">
+                                <button class="btn btn-outline-primary form-control" id="btn_sqrt"><b>V</b></button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-primary form-control" id="btn_0">0</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-primary form-control" id="btn_punkt"><b>.</b></button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-warning form-control" id="btn_result"><b>=</b></button>
                             </div>
                         </div>
                     </div>
